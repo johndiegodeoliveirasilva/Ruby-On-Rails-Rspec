@@ -3,7 +3,15 @@ describe "Matchers True and False" do
     expect(1.odd?).to be true
   end
 
-  it 'be true' do
+  it 'be_truthy' do
+    expect(1.odd?).to be_truthy
+  end
+
+  it 'be false' do
     expect(1.even?).to be false
+  end
+
+  it 'be_falsey' do
+    expect(1.even?).to be_falsey
   end
 end
