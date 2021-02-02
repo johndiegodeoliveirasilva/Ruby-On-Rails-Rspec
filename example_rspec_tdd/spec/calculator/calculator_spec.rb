@@ -1,20 +1,25 @@
 class Calculator
-  def sum(num1, num2)
-    num1 + num2
+  def sum(a, b)
+    a + b
   end
 end
 
 describe Calculator do
-  it 'sum method for two numbers' do
-    calc = Calculator.new
-    result = calc.sum(5, 7)
-    expect(result).to eq(12) 
-  end
+  context "#sum" do
+    it 'with positive numbers' do
+      result = subject.sum(5,7) 
+      expect(result).to eq(12) 
+    end
+  
+    it 'with negative numbers' do
+      result = subject.sum(-5,7) 
+      expect(result).to eq(2) 
+    end
 
-  it 'sum method for two numbers with negative numbers' do
-    calc = Calculator.new
-    result = calc.sum(-5, 7)
-    expect(result).to eq(2) 
+    it 'with negative numbers' do
+      result = subject.sum(-5, -7) 
+      expect(result).to eq(-12)
+    end
   end
 end
 
