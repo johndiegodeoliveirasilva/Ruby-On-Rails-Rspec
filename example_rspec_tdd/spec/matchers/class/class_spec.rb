@@ -1,7 +1,7 @@
 require 'string_not_empty'
 describe "Classes" do
-   it "be_instance_of" do
-    expect(10).to be_instance_of(Integer) # Exact the class
+  it "be_instance_of" do
+    expect(17.0).to be_instance_of(Float) # Exact the class
   end
 
   it "be_king_of" do
