@@ -1,8 +1,4 @@
-class StringNotEmpty < String
-  def initialize
-    self << "I am not empty"
-  end
-end
+require 'string_not_empty'
 
 describe String do
   describe StringNotEmpty do

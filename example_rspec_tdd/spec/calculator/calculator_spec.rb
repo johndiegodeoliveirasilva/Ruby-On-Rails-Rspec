@@ -1,8 +1,4 @@
-class Calculator
-  def sum(a, b)
-    a + b
-  end
-end
+require 'calculator'
 
 describe Calculator, "About a Calculator" do
   context "#sum" do
